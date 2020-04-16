@@ -3,6 +3,5 @@ steps:
   args:
   - functions
   - deploy
-  - [FUNCTION_NAME]
+  - [helloPubSub]
   - --source=.
-  - --trigger-http
