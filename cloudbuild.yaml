@@ -5,3 +5,4 @@ steps:
   - deploy
   - [helloPubSub]
   - --source=.
+  - --trigger-topic=FireFirstFunction
