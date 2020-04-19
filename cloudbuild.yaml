@@ -1,8 +1,4 @@
-steps:
+
 - name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - functions
-  - deploy
-  - helloPubSub
-  - --source=.
-  - --trigger-topic: "FireFirstFunction"
+  args: ['functions', 'deploy', 'helloPubSub', '--trigger-topic=FireFirstFunction', '--runtime', 'nodejs8', 'source=.']
+ 
