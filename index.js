@@ -12,5 +12,5 @@ exports.helloPubSub = (data, context) => {
     ? Buffer.from(pubSubMessage.data, 'base64').toString()
     : 'World';
 
-  console.log(`Hello there, ${name}!`);
+  console.log(`Hello there I got my CI done, ${name}!`);
 };
