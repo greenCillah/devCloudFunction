@@ -2,6 +2,7 @@
   "name": "helloPubSub",
   "version": "0.0.1",
   "dependencies": {
-    "@google-cloud/pubsub": "^0.18.0"
+    "@google-cloud/pubsub": "^0.18.0",
+    "firebase-admin": "~8.11.0"
   }
 }
