@@ -16,6 +16,7 @@ exports.helloPubSub = (data, context) => {
 
   //save to firestore
   const admin = require('firebase-admin');  
+  const admin = require('firebase-admin');  
   admin.initializeApp();
 
   let db = admin.firestore();
