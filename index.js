@@ -13,4 +13,19 @@ exports.helloPubSub = (data, context) => {
     : 'World';
 
   console.log(`Hello there I got my CI done, ${name}!`);
+
+  //save to firestore
+  const admin = require('firebase-admin');  
+  admin.initializeApp();
+
+  let db = admin.firestore();
+
+  let docRef = db.collection('users').doc('alovelace');
+
+  let setAda = docRef.set({
+    first: 'PubSub',
+    last: 'Lovelace',
+    born: 1915
+});
+
 };
