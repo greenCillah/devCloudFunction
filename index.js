@@ -28,7 +28,7 @@ exports.helloPubSub = (data, context) => {
 
   let setAda = docRef.set({
     first: 'PubSub',
-    last: 'Lovelace',
+    last: 'LoveFirst',
     born: 1915
 });
 
