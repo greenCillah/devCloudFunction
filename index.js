@@ -26,7 +26,7 @@ exports.helloPubSub = (data, context) => {
 
   let docRef = db.collection('users');
 
-  let setAda = docRef.set({
+  let setAda = docRef.add({
     first: 'PubSub',
     last: 'LoveFirst',
     born: 1915
