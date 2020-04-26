@@ -17,8 +17,11 @@ exports.helloPubSub = (data, context) => {
   //save to firestore
   
   const admin = require('firebase-admin');  
-  admin.initializeApp();
 
+  if (!admin.apps.length) {
+    admin.initializeApp({});
+  }
+ 
   let db = admin.firestore();
 
   let docRef = db.collection('users').doc('alovelace');
