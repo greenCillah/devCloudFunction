@@ -24,7 +24,7 @@ exports.helloPubSub = (data, context) => {
  
   let db = admin.firestore();
 
-  let docRef = db.collection('users').doc('alovelace');
+  let docRef = db.collection('users').doc('alovelace2');
 
   let setAda = docRef.set({
     first: 'PubSub',
